@@ -22,7 +22,7 @@ html{
 .contenedor-header{
     background: #232421;
     position: fixed;
-    width: 95%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
@@ -44,6 +44,7 @@ html{
 .contenedor-header header ul{
     display: flex;
     list-style: none;
+    margin-right: 50px;
 }
 .contenedor-header header nav ul li a{
     text-align: none;
@@ -76,7 +77,7 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(images/fondo.jpg);
     background-size: cover;
-    height: 110vh;
+    height: 70vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -90,12 +91,12 @@ html{
     border-radius: 40px;
 }
 .inicio .contenido-banner img{
-        margin-top: 60 px;
-        border: 10px solid #1cb698;
-        display: block;
-        width: 93%;
-        margin: auto;
-        border-radius: 100%;
+    margin-top: 60 px;
+    border: 10px solid #1cb698;
+    display: block;
+    width: 93%;
+    margin: auto;
+    border-radius: 100%;
 }
 .inicio .contenido-banner h1{
     margin-top: 25px;
@@ -679,7 +680,7 @@ footer .arriba {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width:980px) {
+@media screen and (max-width:990px) {
     nav{
         display: none;
     }  
@@ -703,6 +704,54 @@ footer .arriba {
    }
 }
 @media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width:350px){
     .sobremi .fila{
         display: block;
     }
