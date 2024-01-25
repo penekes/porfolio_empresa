@@ -43,3 +43,16 @@ window.onscroll = function(){
     efectoHabilidades();
 }
 
+document.getElementById('downloadButton').onclick = function() {
+    var pdfUrl = 'Curriculum.pdf'; // Actualiza la ruta según la ubicación de tu archivo PDF
+    var link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Mi_Curriculum.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+};
+
+
