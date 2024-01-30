@@ -44,10 +44,10 @@ window.onscroll = function(){
 }
 
 document.getElementById('downloadButton').onclick = function() {
-    var pdfUrl = 'Curriculum.pdf'; // Actualiza la ruta según la ubicación de tu archivo PDF
+    var pdfUrl = 'Joaquin_Lopezosa_2024.pdf'; 
     var link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Mi_Curriculum.pdf';
+    link.download = 'Joaquin_Lopezosa_2024Curriculum.pdf';
 
     document.body.appendChild(link);
     link.click();
